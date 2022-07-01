@@ -42,4 +42,13 @@
 </div>
 
 
+## Result (Snapshot Database)
+
+<div align= "center">
+
+  ![Snapshot Database](https://github.com/Abdelrhman2022/ETL-Telecom/blob/main/Telecom/images/Snapshot%20Database.JPG)
+
+</div>
+
+
 
