@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Telecom</Name>
-    <LastWriteTime>2022-06-29T15:49:42.6908035Z</LastWriteTime>
+    <LastWriteTime>2022-07-01T14:48:23.7191652Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load Data.dtsx</Name>
-      <LastWriteTime>2022-06-30T15:10:25.4238195Z</LastWriteTime>
+      <LastWriteTime>2022-07-01T16:14:26.2748501Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

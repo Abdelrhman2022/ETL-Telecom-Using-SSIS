@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Load Data"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{58E62F57-C1ED-4AF7-B63A-9278512D1577}">
+  DTS:VersionBuild="105"
+  DTS:VersionGUID="{B88A92CC-9D2E-46CC-8EB4-E7AD516C3109}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,164 +29,85 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:refId="Package.ConnectionManagers[FF SRC RT]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{9BFE9824-F0F3-45C5-8021-070CBD34BDEB}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 0\02_clean_data_with_null.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="id"
-              DTS:DTSID="{F1D4EC8D-0FFD-4453-86FE-DB85E53426E6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="imsi"
-              DTS:DTSID="{37CC1FAE-B3CB-47FD-A973-A7F00352FF0C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="imei"
-              DTS:DTSID="{938C62FB-3F20-49C8-AC6B-9896811D33FE}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="cell"
-              DTS:DTSID="{658AB7B9-6131-4643-882D-1E5AE8C7F55C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="lac"
-              DTS:DTSID="{0473AF82-8107-4C9A-9D4A-6406E2960B70}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="event_type"
-              DTS:DTSID="{803425E0-393B-4B8D-BA97-CE56BEAC3446}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="event_ts"
-              DTS:DTSID="{FE2A5001-6875-4E1C-A083-201D4FE4B763}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{B93021C5-7B5A-49C7-8BFA-EBCFFA280F04}"
-      DTS:ObjectName="Flat File Connection Manager 1">
+      DTS:DTSID="{AC607DFA-F43C-48D0-8D28-849DEE0370CF}"
+      DTS:ObjectName="FF SRC RT">
       <DTS:PropertyExpression
         DTS:Name="ConnectionString">@[User::FF_SRC_FULL_PATH]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
           DTS:LocaleID="1033"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:HeaderRowDelimiter="_x007C_"
           DTS:ColumnNamesInFirstDataRow="True"
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 1\02_clean_data_with_null.csv">
+          DTS:ConnectionString="C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 2\batch 02 - file 04.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="id"
-              DTS:DTSID="{B6A8BE15-BE2C-4383-97ED-BFE192ECCCD0}"
+              DTS:DTSID="{707B1336-93D5-42E7-9693-2E3CEFE2F0EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="9"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="imsi"
-              DTS:DTSID="{594AE379-AB54-4619-A5B8-7BE033C5420C}"
+              DTS:DTSID="{A4BC1A63-36DB-455F-B662-7396DC41EB30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="14"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="imei"
-              DTS:DTSID="{E7D23065-30E9-4736-8AD1-6F37B5D281FD}"
+              DTS:DTSID="{BE6A41FE-B852-46BF-A509-7B53A91A11EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="16"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="cell"
-              DTS:DTSID="{AC0B5CA3-FC15-461B-8E33-14046D6D1786}"
+              DTS:DTSID="{333290A1-8B98-4656-AB15-049F85FF9055}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:DataType="3"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="lac"
-              DTS:DTSID="{03C9F94D-36CC-4B6B-A165-68A1E636F321}"
+              DTS:DTSID="{D6C4C0B7-6FB9-4D1A-B95A-14C988E2BF7A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="1"
+              DTS:MaximumWidth="50"
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="event_type"
-              DTS:DTSID="{E5274A98-81B4-430A-88FC-A4D97B28BF13}"
+              DTS:DTSID="{93416C83-D51A-41FB-8B5F-D96082EEEAB3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000A_"
-              DTS:DataType="7"
+              DTS:ColumnDelimiter="_x000D_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="event_ts"
-              DTS:DTSID="{7C85D742-AFBC-4808-A0DB-41F6CBA5FF84}"
+              DTS:DTSID="{197933F7-9E39-444A-BA8F-382586B23623}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -232,6 +153,15 @@
       DTS:ObjectName="Copy_Move">
       <DTS:VariableValue
         DTS:DataType="8">copy</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{29F18C53-1053-45A0-929F-6884EA99CDF5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FC_DEST_ARCHIVE">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\Processed_Files\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -285,7 +215,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FF_SRC_FILE_NAME">
       <DTS:VariableValue
-        DTS:DataType="8">02_clean_data_with_null</DTS:VariableValue>
+        DTS:DataType="8">batch 02 - file 04</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -294,7 +224,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FF_SRC_FOLDER_PATH">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 1\</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 2\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -305,7 +235,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FF_SRC_FULL_PATH">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 1\02_clean_data_with_null.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 2\batch 02 - file 04.csv</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -313,20 +243,20 @@
       DTS:refId="Package\Foreach Loop Container"
       DTS:CreationName="STOCK:FOREACHLOOP"
       DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{96337C51-C8CB-46C1-A2AA-4824EB63F385}"
+      DTS:DTSID="{5563EB17-ED24-4BDD-9F88-97FBE995B522}"
       DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
       DTS:ObjectName="Foreach Loop Container">
       <DTS:ForEachEnumerator
         DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{EF50DDE0-E410-4A71-B81B-A0713EB8E6B2}"
-        DTS:ObjectName="{EF50DDE0-E410-4A71-B81B-A0713EB8E6B2}">
+        DTS:DTSID="{8D5A0A21-1FF5-4E77-B2A6-94ED48A2C4D6}"
+        DTS:ObjectName="{8D5A0A21-1FF5-4E77-B2A6-94ED48A2C4D6}">
         <DTS:PropertyExpression
           DTS:Name="Directory">@[User::FF_SRC_FOLDER_PATH]</DTS:PropertyExpression>
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 1\" />
+              Folder="C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\source_files\batch 2\" />
             <FEFEProperty
               FileSpec="*.csv" />
             <FEFEProperty
@@ -336,17 +266,7 @@
           </ForEachFileEnumeratorProperties>
         </DTS:ObjectData>
       </DTS:ForEachEnumerator>
-      <DTS:Variables>
-        <DTS:Variable
-          DTS:CreationName=""
-          DTS:DTSID="{A09A9C48-022E-4D9B-8048-B87B2855A6F6}"
-          DTS:IncludeInDebugDump="2345"
-          DTS:Namespace="User"
-          DTS:ObjectName="Destination">
-          <DTS:VariableValue
-            DTS:DataType="8">C:\Users\Abdelrahman Ragab\Downloads\Compressed\ETL-Telecom-SSIS-master\Processed_Files</DTS:VariableValue>
-        </DTS:Variable>
-      </DTS:Variables>
+      <DTS:Variables />
       <DTS:Executables>
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container\DFT Load CSV tO Database"
@@ -538,6 +458,35 @@
                   </outputs>
                 </component>
                 <component
+                  refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Extracted_error Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::fc_extracted_error</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_processed count"
                   componentClassID="Microsoft.RowCount"
                   contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -567,19 +516,19 @@
                   </outputs>
                 </component>
                 <component
-                  refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT"
+                  refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source"
                   componentClassID="Microsoft.FlatFileSource"
                   contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
                   description="Flat File Source"
                   localeId="1033"
-                  name="FF SRC RT"
+                  name="Flat File Source"
                   usesDispositions="true"
                   version="1">
                   <properties>
                     <property
                       dataType="System.Boolean"
                       description="Specifies whether zero-length columns are treated as null."
-                      name="RetainNulls">true</property>
+                      name="RetainNulls">false</property>
                     <property
                       dataType="System.String"
                       description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
@@ -587,25 +536,23 @@
                   </properties>
                   <connections>
                     <connection
-                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Connections[FlatFileConnection]"
-                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
-                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[FF SRC RT]"
+                      connectionManagerRefId="Package.ConnectionManagers[FF SRC RT]"
                       name="FlatFileConnection" />
                   </connections>
                   <outputs>
                     <output
-                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output]"
+                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output]"
                       name="Flat File Source Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[id]"
-                          codePage="1252"
-                          dataType="str"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[id]"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[id]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
                           name="id"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -620,14 +567,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imsi]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[imsi]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[imsi]"
                           length="9"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imsi]"
                           name="imsi"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -642,14 +589,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[imei]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[imei]"
                           length="14"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]"
                           name="imei"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -664,14 +611,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[cell]"
-                          codePage="1252"
-                          dataType="str"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[cell]"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[cell]"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[cell]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cell]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[cell]"
                           name="cell"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -686,14 +631,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[lac]"
-                          codePage="1252"
-                          dataType="str"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[lac]"
+                          dataType="i4"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[lac]"
-                          length="50"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[lac]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lac]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[lac]"
                           name="lac"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -708,14 +651,14 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_type]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_type]"
                           codePage="1252"
                           dataType="str"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[event_type]"
-                          length="2"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_type]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[event_type]"
+                          length="1"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_type]"
                           name="event_type"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -730,12 +673,12 @@
                           </properties>
                         </outputColumn>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_ts]"
-                          dataType="dbTimeStamp"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_ts]"
+                          dataType="date"
                           errorOrTruncationOperation="Conversion"
                           errorRowDisposition="RedirectRow"
-                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[event_ts]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_ts]"
+                          externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[event_ts]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_ts]"
                           name="event_ts"
                           truncationRowDisposition="RedirectRow">
                           <properties>
@@ -753,63 +696,71 @@
                       <externalMetadataColumns
                         isUsed="True">
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[id]"
-                          dataType="i4"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="id" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[imsi]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[imsi]"
                           codePage="1252"
                           dataType="str"
-                          length="9"
+                          length="50"
                           name="imsi" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[imei]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[imei]"
                           codePage="1252"
                           dataType="str"
-                          length="14"
+                          length="50"
                           name="imei" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[cell]"
-                          dataType="i1"
-                          name="cell" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[lac]"
-                          dataType="i4"
-                          name="lac" />
-                        <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[event_type]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cell]"
                           codePage="1252"
                           dataType="str"
-                          length="1"
+                          length="50"
+                          name="cell" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[lac]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="lac" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[event_type]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="event_type" />
                         <externalMetadataColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].ExternalColumns[event_ts]"
-                          dataType="date"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[event_ts]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
                           name="event_ts" />
                       </externalMetadataColumns>
                     </output>
                     <output
-                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output]"
+                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output]"
                       isErrorOut="true"
                       name="Flat File Source Error Output">
                       <outputColumns>
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           codePage="1252"
                           dataType="text"
                           description="Flat File Source Error Output Column"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                           name="Flat File Source Error Output Column" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                           name="ErrorCode"
                           specialFlags="1" />
                         <outputColumn
-                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           dataType="i4"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                           name="ErrorColumn"
                           specialFlags="2" />
                       </outputColumns>
@@ -874,7 +825,7 @@ where [refTable].[imsi] = ?</property>
                       containsID="true"
                       dataType="System.String"
                       description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                      name="ParameterMap">#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]};</property>
+                      name="ParameterMap">#{Package\Foreach Loop Container\DFT Load CSV tO Database\241:invalid};</property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -903,7 +854,7 @@ where [refTable].[imsi] = ?</property>
                           cachedDataType="str"
                           cachedLength="9"
                           cachedName="imsi"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]">
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imsi]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -1056,7 +1007,7 @@ where [refTable].[imsi] = ?</property>
                           cachedLength="9"
                           cachedName="imsi"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[imsi]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imsi]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[imei]"
                           cachedCodepage="1252"
@@ -1064,45 +1015,39 @@ where [refTable].[imsi] = ?</property>
                           cachedLength="14"
                           cachedName="imei"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[imei]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[cell]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="cell"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[cell]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[cell]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[cell]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[lac]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="lac"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[lac]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[lac]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[lac]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[event_type]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="2"
+                          cachedLength="1"
                           cachedName="event_type"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[event_type]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_type]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_type]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[event_ts]"
-                          cachedDataType="dbTimeStamp"
+                          cachedDataType="date"
                           cachedName="event_ts"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[event_ts]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_ts]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_ts]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[id]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="id"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].ExternalColumns[transaction_id]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[id]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input].Columns[subscriber_id]"
                           cachedDataType="i4"
@@ -1294,12 +1239,10 @@ where [refTable].[imsi] = ?</property>
                       <inputColumns>
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[id]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="id"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[id]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[id]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[imsi]"
                           cachedCodepage="1252"
@@ -1307,7 +1250,7 @@ where [refTable].[imsi] = ?</property>
                           cachedLength="9"
                           cachedName="imsi"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[imsi]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imsi]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imsi]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[imei]"
                           cachedCodepage="1252"
@@ -1315,37 +1258,33 @@ where [refTable].[imsi] = ?</property>
                           cachedLength="14"
                           cachedName="imei"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[imei]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[cell]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="cell"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[cell]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[cell]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[cell]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[lac]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="50"
+                          cachedDataType="i4"
                           cachedName="lac"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[lac]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[lac]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[lac]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[event_type]"
                           cachedCodepage="1252"
                           cachedDataType="str"
-                          cachedLength="2"
+                          cachedLength="1"
                           cachedName="event_type"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[event_type]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_type]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_type]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[event_ts]"
-                          cachedDataType="dbTimeStamp"
+                          cachedDataType="date"
                           cachedName="event_ts"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].ExternalColumns[event_ts]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[event_ts]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[event_ts]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR.Inputs[OLE DB Destination Input].Columns[subscriber_id]"
                           cachedDataType="i4"
@@ -1557,19 +1496,19 @@ where [refTable].[imsi] = ?</property>
                           cachedDataType="text"
                           cachedName="Flat File Source Error Output Column"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].ExternalColumns[Flat File Source Error Output Column]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].Columns[ErrorCode]"
                           cachedDataType="i4"
                           cachedName="ErrorCode"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].Columns[ErrorColumn]"
                           cachedDataType="i4"
                           cachedName="ErrorColumn"
                           externalMetadataColumnId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
                         <inputColumn
                           refId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input].Columns[audit_id]"
                           cachedDataType="i4"
@@ -1670,7 +1609,7 @@ where [refTable].[imsi] = ?</property>
                           cachedDataType="str"
                           cachedLength="14"
                           cachedName="imei"
-                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]" />
+                          lineageId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -1698,7 +1637,7 @@ where [refTable].[imsi] = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,8,1252)(([ISNULL](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]}) || [LEN](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]}) &lt; 14) ? "-99999" : [SUBSTRING](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]},1,8))</property>
+                              name="Expression">(DT_STR,8,1252)(([ISNULL](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]}) || [LEN](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]}) &lt; 14) ? "-99999" : [SUBSTRING](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]},1,8))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
@@ -1722,7 +1661,7 @@ where [refTable].[imsi] = ?</property>
                               containsID="true"
                               dataType="System.String"
                               description="Derived Column Expression"
-                              name="Expression">(DT_STR,6,1252)(([ISNULL](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]}) || [LEN](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]}) &lt; 14) ? "-99999" : [SUBSTRING](#{Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output].Columns[imei]},1,6))</property>
+                              name="Expression">(DT_STR,6,1252)(([ISNULL](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]}) || [LEN](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]}) &lt; 14) ? "-99999" : [SUBSTRING](#{Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output].Columns[imei]},1,6))</property>
                             <property
                               containsID="true"
                               dataType="System.String"
@@ -1788,35 +1727,6 @@ where [refTable].[imsi] = ?</property>
                     </output>
                   </outputs>
                 </component>
-                <component
-                  refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1"
-                  componentClassID="Microsoft.RowCount"
-                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
-                  name="Row Count 1">
-                  <properties>
-                    <property
-                      dataType="System.String"
-                      description="Specifies the variable to hold the row count."
-                      name="VariableName">User::fc_extracted_error</property>
-                  </properties>
-                  <inputs>
-                    <input
-                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1.Inputs[Row Count Input 1]"
-                      hasSideEffects="true"
-                      name="Row Count Input 1">
-                      <externalMetadataColumns />
-                    </input>
-                  </inputs>
-                  <outputs>
-                    <output
-                      refId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1.Outputs[Row Count Output 1]"
-                      name="Row Count Output 1"
-                      synchronousInputId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1.Inputs[Row Count Input 1]">
-                      <externalMetadataColumns />
-                    </output>
-                  </outputs>
-                </component>
               </components>
               <paths>
                 <path
@@ -1826,7 +1736,7 @@ where [refTable].[imsi] = ?</property>
                   startId="Package\Foreach Loop Container\DFT Load CSV tO Database\DRC Audit ID.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output1]"
-                  endId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1.Inputs[Row Count Input 1]"
+                  endId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count.Inputs[Row Count Input 1]"
                   name="Derived Column Output"
                   startId="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_error count.Outputs[Derived Column Output]" />
                 <path
@@ -1838,12 +1748,12 @@ where [refTable].[imsi] = ?</property>
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Error Output]"
                   endId="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_error count.Inputs[Derived Column Input]"
                   name="Flat File Source Error Output"
-                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Error Output]" />
+                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Error Output]" />
                 <path
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Output]"
                   endId="Package\Foreach Loop Container\DFT Load CSV tO Database\DRC Audit ID.Inputs[Derived Column Input]"
                   name="Flat File Source Output"
-                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT.Outputs[Flat File Source Output]" />
+                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source.Outputs[Flat File Source Output]" />
                 <path
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Lookup Match Output]"
                   endId="Package\Foreach Loop Container\DFT Load CSV tO Database\Prepare Subscriber ID, SNR and TAC.Inputs[Derived Column Input]"
@@ -1863,7 +1773,7 @@ where [refTable].[imsi] = ?</property>
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 11]"
                   endId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR.Inputs[OLE DB Destination Input]"
                   name="Row Count Output 1"
-                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1.Outputs[Row Count Output 1]" />
+                  startId="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count.Outputs[Row Count Output 1]" />
                 <path
                   refId="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 12]"
                   endId="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T.Inputs[OLE DB Destination Input]"
@@ -1947,14 +1857,14 @@ where [refTable].[imsi] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="FST COPY"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOverwriteDestFile="True"
               TaskSourcePath="User::FF_SRC_FULL_PATH"
               TaskIsSourceVariable="True"
-              TaskDestinationPath="User::Destination"
+              TaskDestinationPath="User::FC_DEST_ARCHIVE"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -1967,7 +1877,7 @@ where [refTable].[imsi] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="FST MOVE"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -1975,7 +1885,7 @@ where [refTable].[imsi] = ?</property>
               TaskOverwriteDestFile="True"
               TaskSourcePath="User::FF_SRC_FULL_PATH"
               TaskIsSourceVariable="True"
-              TaskDestinationPath="User::Destination"
+              TaskDestinationPath="User::Copy_Move"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -2061,8 +1971,8 @@ where [refTable].[imsi] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{DBE3CB5C-948D-417E-A8E2-CC52934DC8E9}"
-          DTS:ObjectName="{DBE3CB5C-948D-417E-A8E2-CC52934DC8E9}"
+          DTS:DTSID="{0DA72724-1232-4D1D-9B18-F25F03493A62}"
+          DTS:ObjectName="{0DA72724-1232-4D1D-9B18-F25F03493A62}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FF_SRC_FILE_NAME" />
       </DTS:ForEachVariableMappings>
@@ -2092,12 +2002,12 @@ where [refTable].[imsi] = ?</property>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{7E505F6E-E498-4E80-91C0-4A58D16D9737}"
+      DTS:DTSID="{60F71835-8941-4540-9C19-19A2410A3EB3}"
       DTS:From="Package\SQL BATCH ID"
       DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
+      DTS:ObjectName="Constraint 4"
       DTS:To="Package\Foreach Loop Container" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
@@ -2115,60 +2025,26 @@ where [refTable].[imsi] = ?</property>
         <NodeLayout
           Size="208,42"
           Id="Package\Foreach Loop Container\DFT Load CSV tO Database"
-          TopLeft="171.5,130.5" />
-        <NodeLayout
-          Size="126,42"
-          Id="Package\Foreach Loop Container\FST COPY"
-          TopLeft="59,307" />
-        <NodeLayout
-          Size="128,42"
-          Id="Package\Foreach Loop Container\FST MOVE"
-          TopLeft="348,305" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Foreach Loop Container\SQL AUDIT ID"
-          TopLeft="188,28" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="261.5,70">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="14,60.5"
-              Start="0,0"
-              End="14,53">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26.25"
-                    Point2="0,30.25"
-                    Point3="4,30.25" />
-                  <mssgle:LineSegment
-                    End="10,30.25" />
-                  <mssgle:CubicBezierSegment
-                    Point1="10,30.25"
-                    Point2="14,30.25"
-                    Point3="14,34.25" />
-                  <mssgle:LineSegment
-                    End="14,53" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="118,108" />
         <NodeLayout
           Size="163,42"
           Id="Package\Foreach Loop Container\Execute SQL Task"
-          TopLeft="183,209" />
+          TopLeft="129.5,186.5" />
+        <NodeLayout
+          Size="126,42"
+          Id="Package\Foreach Loop Container\FST COPY"
+          TopLeft="5.5,284.5" />
+        <NodeLayout
+          Size="128,42"
+          Id="Package\Foreach Loop Container\FST MOVE"
+          TopLeft="294.5,282.5" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Foreach Loop Container\SQL AUDIT ID"
+          TopLeft="134.5,5.5" />
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          TopLeft="275.5,172.5">
+          TopLeft="222,150">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2202,7 +2078,7 @@ where [refTable].[imsi] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="264.5,251">
+          TopLeft="211,228.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2237,8 +2113,42 @@ where [refTable].[imsi] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="208,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14,60.5"
+              Start="0,0"
+              End="14,53">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.25"
+                    Point2="0,30.25"
+                    Point3="4,30.25" />
+                  <mssgle:LineSegment
+                    End="10,30.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10,30.25"
+                    Point2="14,30.25"
+                    Point3="14,34.25" />
+                  <mssgle:LineSegment
+                    End="14,53" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="238.666666666667,251">
+          TopLeft="185.166666666667,228.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2275,28 +2185,40 @@ where [refTable].[imsi] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="562,402"
-          Size="562,445"
+          PanelSize="428,381"
+          Size="428,424"
           Id="Package\Foreach Loop Container"
-          TopLeft="341,127" />
+          TopLeft="418,199" />
         <NodeLayout
           Size="148,42"
           Id="Package\SQL BATCH ID"
-          TopLeft="542,17" />
+          TopLeft="542,78" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="619,59">
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="616,120">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68"
+              EndConnector="16,79"
               Start="0,0"
-              End="0,60.5">
+              End="16,71.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5" />
+                    End="0,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,35.5"
+                    Point2="0,39.5"
+                    Point3="4,39.5" />
+                  <mssgle:LineSegment
+                    End="12,39.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12,39.5"
+                    Point2="16,39.5"
+                    Point3="16,43.5" />
+                  <mssgle:LineSegment
+                    End="16,71.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2314,234 +2236,52 @@ where [refTable].[imsi] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="252,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\Prepare Subscriber ID, SNR and TAC"
-          TopLeft="5.50000000000006,413.5" />
-        <NodeLayout
-          Size="187,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR"
-          TopLeft="274,311.5" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T"
-          TopLeft="58.0000000000001,617.5" />
+          Size="156,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\pre_insert count"
+          TopLeft="53.5000000000001,515.5" />
         <NodeLayout
           Size="163,42"
           Id="Package\Foreach Loop Container\DFT Load CSV tO Database\LKP Subscriber ID"
           TopLeft="50.0000000000001,311.5" />
         <NodeLayout
+          Size="187,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR"
+          TopLeft="295,488.5" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_processed count"
+          TopLeft="37,209.5" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\Extracted_error Count"
+          TopLeft="296.5,313.5" />
+        <NodeLayout
           Size="184,42"
           Id="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR"
-          TopLeft="39.5000000000001,821.5" />
+          TopLeft="36.5000000000001,821.5" />
         <NodeLayout
-          Size="129,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\FF SRC RT"
-          TopLeft="303,5.5" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Lookup Match Output]"
-          TopLeft="131.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="147,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T"
+          TopLeft="58.0000000000001,617.5" />
+        <NodeLayout
+          Size="252,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\Prepare Subscriber ID, SNR and TAC"
+          TopLeft="5.50000000000006,413.5" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_error count"
+          TopLeft="302,166.5" />
         <NodeLayout
           Size="141,42"
           Id="Package\Foreach Loop Container\DFT Load CSV tO Database\DRC Audit ID"
           TopLeft="75,107.5" />
         <NodeLayout
-          Size="205,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_processed count"
-          TopLeft="37,209.5" />
+          Size="189,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\destination_error count"
+          TopLeft="37.0000000000001,719.5" />
         <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output]"
-          TopLeft="142.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Output]"
-          TopLeft="347.333333333333,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-201.833333333333,60"
-              Start="0,0"
-              End="-201.833333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4410413476263" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4410413476263"
-                    Point2="0,24.4410413476263"
-                    Point3="-4,24.4410413476263" />
-                  <mssgle:LineSegment
-                    End="-197.833333333333,24.4410413476263" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-197.833333333333,24.4410413476263"
-                    Point2="-201.833333333333,24.4410413476263"
-                    Point3="-201.833333333333,28.4410413476263" />
-                  <mssgle:LineSegment
-                    End="-201.833333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 1]"
-          TopLeft="135.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\extracted_error count"
-          TopLeft="277,107.5" />
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\Row Count 1"
-          TopLeft="302.5,209.5" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Error Output]"
-          TopLeft="387.666666666667,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-20.1666666666666,60"
-              Start="0,0"
-              End="-20.1666666666666,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4410413476264" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4410413476264"
-                    Point2="0,24.4410413476264"
-                    Point3="-4,24.4410413476264" />
-                  <mssgle:LineSegment
-                    End="-16.1666666666666,24.4410413476264" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-16.1666666666666,24.4410413476264"
-                    Point2="-20.1666666666666,24.4410413476264"
-                    Point3="-20.1666666666666,28.4410413476264" />
-                  <mssgle:LineSegment
-                    End="-20.1666666666666,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-73.7097200520833,29.4410413476264,127.2527734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output1]"
-          TopLeft="367.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 11]"
-          TopLeft="367.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\pre_insert count"
-          TopLeft="53.5000000000001,515.5" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output2]"
-          TopLeft="131.5,455.5">
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 13]"
+          TopLeft="130,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2583,10 +2323,50 @@ where [refTable].[imsi] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="189,42"
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\destination_error count"
-          TopLeft="37.0000000000001,719.5" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 11]"
+          TopLeft="388.25,355.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,133"
+              Start="0,0"
+              End="0,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 1]"
+          TopLeft="135.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[OLE DB Destination Error Output]"
           TopLeft="131.5,659.5">
@@ -2612,8 +2392,32 @@ where [refTable].[imsi] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Row Count Output 13]"
-          TopLeft="131.5,761.5">
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Lookup Match Output]"
+          TopLeft="131.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output2]"
+          TopLeft="131.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2633,11 +2437,129 @@ where [refTable].[imsi] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output1]"
+          TopLeft="390.25,208.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,105"
+              Start="0,0"
+              End="0,97.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,97.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Derived Column Output]"
+          TopLeft="142.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database\Flat File Source"
+          TopLeft="229,37" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Output]"
+          TopLeft="280.666666666667,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-135.166666666667,28.5"
+              Start="0,0"
+              End="-135.166666666667,21">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,7.57929226736566" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,7.57929226736566"
+                    Point2="0,11.5792922673657"
+                    Point3="-4,11.5792922673657" />
+                  <mssgle:LineSegment
+                    End="-131.166666666667,11.5792922673657" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-131.166666666667,11.5792922673657"
+                    Point2="-135.166666666667,11.5792922673657"
+                    Point3="-135.166666666667,15.5792922673657" />
+                  <mssgle:LineSegment
+                    End="-135.166666666667,21" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\DFT Load CSV tO Database.Paths[Flat File Source Error Output]"
+          TopLeft="328.333333333333,79">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64.1666666666667,87.5"
+              Start="0,0"
+              End="64.1666666666667,80">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5504587155963" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5504587155963"
+                    Point2="0,35.5504587155963"
+                    Point3="4,35.5504587155963" />
+                  <mssgle:LineSegment
+                    End="60.1666666666667,35.5504587155963" />
+                  <mssgle:CubicBezierSegment
+                    Point1="60.1666666666667,35.5504587155963"
+                    Point2="64.1666666666667,35.5504587155963"
+                    Point3="64.1666666666667,39.5504587155963" />
+                  <mssgle:LineSegment
+                    End="64.1666666666667,80" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-31.5430533854166,40.5504587155963,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR">
+    design-time-name="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2663,7 +2585,7 @@ where [refTable].[imsi] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Load T ERROR">
+    design-time-name="Package\Foreach Loop Container\DFT Load CSV tO Database\OLEDB Source  ERROR">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
